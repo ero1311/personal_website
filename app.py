@@ -45,7 +45,7 @@ app.layout = dmc.MantineProvider(
                                             dmc.CardSection(
                                                 dmc.Image(
                                                     src=dash.get_asset_url("imgs/erik_pic.jpg"),
-                                                    height=240,
+                                                    height=260,
                                                 )
                                             ),
                                             dmc.Group(
@@ -91,9 +91,9 @@ app.layout = dmc.MantineProvider(
                                         withBorder=True,
                                         shadow="sm",
                                         radius="md",
-                                        pos="fixed"
                                     ),
-                                    span=3
+                                    xs=4,
+                                    md=3,
                                 ),
                                 dmc.Col(
                                     dmc.Stack(
@@ -600,14 +600,17 @@ app.layout = dmc.MantineProvider(
                                         ],
                                         spacing="md",
                                     ),
-                                    span=9
+                                    xs=8,
+                                    md=9,
                                 )
                             ],
-                            mt="xs"
+                            mt="xs",
                         )
                     ],
-                    offset=2,
-                    span=8
+                    offsetMd=2,
+                    offsetXs=0,
+                    md=8,
+                    xs=12
                 )
             ]
         )
